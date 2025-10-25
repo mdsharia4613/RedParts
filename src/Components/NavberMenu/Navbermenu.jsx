@@ -1,101 +1,80 @@
 import { NavLink } from "react-router-dom";
-import { CiHeart, } from "react-icons/ci";
+import { CiHeart } from "react-icons/ci";
 import { FaShoppingCart, FaUserAlt } from "react-icons/fa";
 
-
-
 const Navbermenu = () => {
-
     return (
-        <div className="navbar   container mx-auto px-10">
-            <div className="navbar-start ">
-                <div className="dropdown ">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+        <div className="navbar container mx-auto px-10 ">
+            {/* LEFT SIDE */}
+            <div className="navbar-start">
+                <div className="hidden lg:flex items-center space-x-6 font-semibold text-lg">
+                    <NavLink to="/" className="hover:text-red-500 transition">Home</NavLink>
+
+                    {/* SHOP DROPDOWN */}
+                    <div className="relative group">
+                        <button className="hover:text-red-500 transition">Shop</button>
+                        <div
+                            className="absolute left-0 top-full hidden group-hover:flex flex-col bg-gray-800 rounded-md shadow-lg mt-2 w-40
+              opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-50 overflow-hidden"
+                        >
+                            <NavLink to="/product" className="px-4 py-2 hover:bg-red-600 rounded-t-md text-white">Product</NavLink>
+                            <NavLink to="/cart" className="px-4 py-2 hover:bg-red-600 rounded-b-md text-white">Cart</NavLink>
+                        </div>
                     </div>
-                    <ul
-                        tabIndex="-1"
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-xl">
-                        <NavLink>Home</NavLink>
-                        <li>
-                            <details>
-                                <summary>Shop</summary>
-                                <ul className="p-2">
-                                    <NavLink><a href="">Product</a></NavLink>
-                                    <NavLink><a href="">Cart</a></NavLink>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Blog</summary>
-                                <ul className="p-2">
-                                    <NavLink><a href="">Blog List</a></NavLink>
-                                    <NavLink><a href="">Post Page</a></NavLink>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Category</summary>
-                                <ul className="p-2">
-                                    <NavLink><a href="">Engine</a></NavLink>
-                                    <NavLink><a href="">Motor</a></NavLink>
-                                </ul>
-                            </details>
-                        </li>
-                    </ul>
-                </div>
-                <div className="navbar-center hidden lg:flex ">
-                    <ul className="menu menu-horizontal items-center px-1 font-semibold text-lg">
-                        <NavLink>Home</NavLink>
-                        <li>
-                            <details>
-                                <summary>Shop</summary>
-                                <ul className="p-2">
-                                    <NavLink><a href="">Product</a></NavLink>
-                                    <NavLink><a href="">Cart</a></NavLink>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Blog</summary>
-                                <ul className="p-2">
-                                    <NavLink><a href="">Blog List</a></NavLink>
-                                    <NavLink><a href="">Post Page</a></NavLink>
-                                </ul>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Category</summary>
-                                <ul className="p-2">
-                                    <NavLink><a href="">Engine</a></NavLink>
-                                    <NavLink><a href="">Motor</a></NavLink>
-                                </ul>
-                            </details>
-                        </li>
 
-                    </ul>
-                </div>
+                    {/* BLOG DROPDOWN */}
+                    <div className="relative group">
+                        <button className="hover:text-red-500 transition">Blog</button>
+                        <div
+                            className="absolute left-0 top-full hidden group-hover:flex flex-col bg-gray-800 rounded-md shadow-lg mt-2 w-40
+              opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-50 overflow-hidden"
+                        >
+                            <NavLink to="/blog-list" className="px-4 py-2 hover:bg-red-600 text-white">Blog List</NavLink>
+                            <NavLink to="/post-page" className="px-4 py-2 hover:bg-red-600 text-white">Post Page</NavLink>
+                        </div>
+                    </div>
 
+                    {/* CATEGORY DROPDOWN */}
+                    <div className="relative group">
+                        <button className="hover:text-red-500 transition">Category</button>
+                        <div
+                            className="absolute left-0 top-full hidden group-hover:flex flex-col bg-gray-800 rounded-md shadow-lg mt-2 w-40
+              opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-50 overflow-hidden"
+                        >
+                            <NavLink to="/engine" className="px-4 py-2 hover:bg-red-600 text-white">Engine</NavLink>
+                            <NavLink to="/motor" className="px-4 py-2 hover:bg-red-600 text-white">Motor</NavLink>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <NavLink className="text-5xl font-bold"><span className="text-red-600">RED</span>PARTS</NavLink>
+
+            {/* CENTER LOGO */}
+            <NavLink to="/" className="text-4xl font-bold">
+                <span className="text-red-600">RED</span>PARTS
+
+            </NavLink>
+
+            {/* RIGHT ICONS */}
             <div className="navbar-end gap-6">
-                <NavLink className="text-3xl "> <CiHeart /> </NavLink>
-               <button className="flex items-center gap-2 cursor-pointer" type="button">
-                    <span className="text-2xl"> < FaUserAlt /></span>
+                <NavLink className="text-3xl">
+                    <CiHeart />
+                </NavLink>
+                <button className="flex items-center gap-2 cursor-pointer" type="button">
+                    <span className="text-2xl">
+                        <FaUserAlt />
+                    </span>
                     <div>
-                        <p className="text-gray-500">Hello, Login</p>
+                        <p className="text-gray-400 text-sm">Hello, Login</p>
                         <p className="font-semibold">My Account</p>
                     </div>
-               </button>
+                </button>
                 <button className="flex items-center gap-2 cursor-pointer" type="button">
-                    <span className="text-2xl"> <FaShoppingCart /></span>
+                    <span className="text-2xl">
+                        <FaShoppingCart />
+                    </span>
                     <div>
-                        <p className="text-gray-400">Shopping Card</p>
-                        <p className="font-semibold">$ 0: 00</p>
+                        <p className="text-gray-400 text-sm">Shopping Cart</p>
+                        <p className="font-semibold">$ 0.00</p>
                     </div>
                 </button>
             </div>

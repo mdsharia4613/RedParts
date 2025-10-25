@@ -2,6 +2,8 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 
 
+
+// import required modulesimport { Pagination } from 'swiper/modules';
 const Card = ({card}) => {
 
     const { img, brand, productName,  reviewCount, price } = card;
@@ -29,6 +31,7 @@ const Card = ({card}) => {
             </div>
 
         </Link>
+
     );
 };
 

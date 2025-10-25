@@ -1,0 +1,249 @@
+[
+        {
+            "id": "16",
+            "brand": "BatteryX",
+            "country": "China",
+            "productName": "12V AGM Car Battery 60Ah",
+            "rating": 4.1,
+            "reviewCount": 520,
+            "price": 109.99,
+            "description": "Maintenance-free AGM battery with high cold-cranking amps.",
+            "img": "https://i.ibb.co.com/S7Jr58Pq/10005.jpg",
+            "stock": "In Stock",
+            "material": "Lead-Acid/AGM",
+            "colors": [
+                "Black"
+            ]
+        },
+        {
+            "id": "17",
+            "brand": "LightBeam",
+            "country": "USA",
+            "productName": "LED Headlight Conversion Kit (H4)",
+            "rating": 4.6,
+            "reviewCount": 764,
+            "price": 69.99,
+            "description": "Plug-and-play LED kit for brighter, whiter light and lower power draw.",
+            "img": "https://i.ibb.co.com/XfL8Y325/10006.jpg",
+            "stock": "In Stock",
+            "material": "Aluminum/Plastic",
+            "colors": [
+                "White",
+                "Black"
+            ]
+        },
+        {
+            "id": "18",
+            "brand": "SealFast",
+            "country": "Brazil",
+            "productName": "Brake Caliper Seal Kit",
+            "rating": 4.0,
+            "reviewCount": 64,
+            "price": 18.0,
+            "description": "Complete caliper seal kit for reliable braking and leak-free operation.",
+            "img": "https://i.ibb.co.com/s90mtY8C/10007.jpg",
+            "stock": "In Stock",
+            "material": "Rubber/Polymer",
+            "colors": [
+                "Black"
+            ]
+        },
+        {
+            "id": "19",
+            "brand": "FilterPro",
+            "country": "USA",
+            "productName": "Cabin Air Filter (Activated Carbon)",
+            "rating": 4.5,
+            "reviewCount": 430,
+            "price": 16.99,
+            "description": "Activated carbon filter for cleaner cabin air and odor reduction.",
+            "img": "https://i.ibb.co.com/ksT447Kp/10008.jpg",
+            "stock": "In Stock",
+            "material": "Filter Media/Carbon",
+            "colors": [
+                "Black"
+            ]
+        },
+        {
+            "id": "20",
+            "brand": "TimingPro",
+            "country": "Italy",
+            "productName": "Timing Belt Kit with Tensioner",
+            "rating": 4.4,
+            "reviewCount": 311,
+            "price": 129.5,
+            "description": "Complete timing kit for accurate timing and long-term reliability.",
+            "img": "https://i.ibb.co.com/LV89681/10009.jpg",
+            "stock": "In Stock",
+            "material": "Reinforced Rubber/Metal",
+            "colors": [
+                "Black"
+            ]
+        },
+        {
+            "id": "21",
+            "brand": "SealRide",
+            "country": "Turkey",
+            "productName": "Strut Mount Bearing (Front)",
+            "rating": 4.1,
+            "reviewCount": 89,
+            "price": 39.99,
+            "description": "High-durability strut mount bearing to reduce noise and improve steering feel.",
+            "img": "https://i.ibb.co.com/PvCNgKPz/10010.jpg",
+            "stock": "Out of Stock",
+            "material": "Steel/Rubber",
+            "colors": [
+                "Black",
+                "Gray"
+            ]
+        },
+        {
+            "id": "22",
+            "brand": "WiringWorks",
+            "country": "Canada",
+            "productName": "Automotive Wiring Harness (Universal)",
+            "rating": 4.0,
+            "reviewCount": 57,
+            "price": 45.0,
+            "description": "Universal wiring harness kit for easy aftermarket installs and repairs.",
+            "img": "https://picsum.photos/seed/CP0022/400/300",
+            "stock": "In Stock",
+            "material": "Copper/Insulation",
+            "colors": [
+                "Black",
+                "Yellow"
+            ]
+        },
+        {
+            "id": "23",
+            "brand": "SealGuard",
+            "country": "USA",
+            "productName": "Oil Pan Gasket (Rubberized)",
+            "rating": 4.2,
+            "reviewCount": 143,
+            "price": 12.5,
+            "description": "Flexible oil pan gasket for leak-free sealing under extreme temperatures.",
+            "img": "https://picsum.photos/seed/CP0023/400/300",
+            "stock": "In Stock",
+            "material": "Rubberized Composite",
+            "colors": [
+                "Black"
+            ]
+        },
+        {
+            "id": "24",
+            "brand": "PipeFlex",
+            "country": "Japan",
+            "productName": "Flexible Brake Hose (Rear)",
+            "rating": 4.3,
+            "reviewCount": 200,
+            "price": 29.99,
+            "description": "High-pressure flexible hose for reliable brake pedal feel and safety.",
+            "img": "https://picsum.photos/seed/CP0024/400/300",
+            "stock": "In Stock",
+            "material": "Reinforced Rubber/Steel",
+            "colors": [
+                "Black"
+            ]
+        },
+        {
+            "id": "25",
+            "brand": "PulleyTech",
+            "country": "Germany",
+            "productName": "Serpentine Belt Tensioner",
+            "rating": 4.5,
+            "reviewCount": 278,
+            "price": 54.0,
+            "description": "Precision tensioner for consistent belt tension and reduced slippage.",
+            "img": "https://picsum.photos/seed/CP0025/400/300",
+            "stock": "In Stock",
+            "material": "Aluminum/Steel",
+            "colors": [
+                "Silver",
+                "Black"
+            ]
+        },
+        {
+            "id": "26",
+            "brand": "WheelWorks",
+            "country": "Turkey",
+            "productName": "Alloy Wheel 16\" (Single)",
+            "rating": 4.2,
+            "reviewCount": 356,
+            "price": 129.0,
+            "description": "Lightweight 16-inch alloy wheel with modern spoke design and good strength.",
+            "img": "https://picsum.photos/seed/CP0026/400/300",
+            "stock": "Out of Stock",
+            "material": "Aluminum Alloy",
+            "colors": [
+                "Gunmetal",
+                "Silver"
+            ]
+        },
+        {
+            "id": "27",
+            "brand": "CoolTech",
+            "country": "South Korea",
+            "productName": "Thermostat Housing Assembly",
+            "rating": 4.0,
+            "reviewCount": 121,
+            "price": 33.75,
+            "description": "Complete thermostat housing with gasket for reliable engine temperature control.",
+            "img": "https://picsum.photos/seed/CP0027/400/300",
+            "stock": "In Stock",
+            "material": "Aluminum",
+            "colors": [
+                "Silver",
+                "Black"
+            ]
+        },
+        {
+            "id": "28",
+            "brand": "TuneMate",
+            "country": "USA",
+            "productName": "OBD2 Diagnostic Scanner (Handheld)",
+            "rating": 4.7,
+            "reviewCount": 1420,
+            "price": 89.99,
+            "description": "Handheld OBD2 scanner for quick fault reading, clearing codes and live data.",
+            "img": "https://picsum.photos/seed/CP0028/400/300",
+            "stock": "In Stock",
+            "material": "Plastic/Electronics",
+            "colors": [
+                "Black",
+                "Blue"
+            ]
+        },
+        {
+            "id": "29",
+            "brand": "SealMate",
+            "country": "India",
+            "productName": "Transmission Pan Gasket",
+            "rating": 4.1,
+            "reviewCount": 68,
+            "price": 15.0,
+            "description": "Durable transmission pan gasket to prevent fluid leaks and contamination.",
+            "img": "https://picsum.photos/seed/CP0029/400/300",
+            "stock": "In Stock",
+            "material": "Rubber/Composite",
+            "colors": [
+                "Black"
+            ]
+        },
+        {
+            "id": "30",
+            "brand": "GlowMate",
+            "country": "UK",
+            "productName": "Glow Plug (Diesel) - Single",
+            "rating": 4.3,
+            "reviewCount": 255,
+            "price": 12.99,
+            "description": "Reliable diesel glow plug for better cold starts and improved combustion.",
+            "img": "https://picsum.photos/seed/CP0030/400/300",
+            "stock": "In Stock",
+            "material": "Nickel Alloy",
+            "colors": [
+                "Silver"
+            ]
+        }
+]

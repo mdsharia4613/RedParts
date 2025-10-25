@@ -10,16 +10,20 @@ import About from './Components/About/About.jsx';
 import Contacts from './Components/Contacts/Contacts.jsx';
 import Home from './Components/Home/Home.jsx';
 import Services from './Components/Services/Services.jsx';
+import Cards from './Components/Cards/Cards.jsx';
+import Error from './Components/Error/Error.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        
       },
       
       {
@@ -30,6 +34,7 @@ const router = createBrowserRouter([
         path: "contact",
         element: <Contacts></Contacts>
       },
+  
      
     ]
   },

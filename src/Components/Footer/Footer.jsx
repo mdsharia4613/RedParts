@@ -6,16 +6,16 @@ const Footer = () => {
         <div className="bg-gray-800">
             <footer className="footer sm:footer-horizontal  text-base-content p-10 container mx-auto">
                 <nav>
-                    <h6 className="footer-title">Services</h6>
+                    <h6 className="footer-title">Contacts us</h6>
                     <a className="link link-hover">Branding</a>
                     <a className="link link-hover">Design</a>
                     <a className="link link-hover">Marketing</a>
                     <a className="link link-hover">Advertisement</a>
                 </nav>
                 <nav>
-                    <h6 className="footer-title">Company</h6>
+                    <h6 className="footer-title">Information</h6>
                     <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
+                    <a className="link link-hover">Delivery Information</a>
                     <a className="link link-hover">Jobs</a>
                     <a className="link link-hover">Press kit</a>
                 </nav>

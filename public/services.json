@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "icon": "🚚",
+        "title": "Free Shipping",
+        "text": "Get free shipping on all orders above $50"
+    },
+    {
+        "id": 2,
+        "icon": "💬",
+        "title": "24/7 Support",
+        "text": "24/7 customer support for all inquiries"
+    },
+    {
+        "id": 3,
+        "icon": "🔒",
+        "title": "Safety Guarantee",
+        "text": "Secure payment and safe delivery"
+    },
+    {
+        "id": 4,
+        "icon": "🔥",
+        "title": "Hot Offers",
+        "text": "Exclusive deals and discounts available now"
+    }
+]

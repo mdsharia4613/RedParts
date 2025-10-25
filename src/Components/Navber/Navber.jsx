@@ -1,6 +1,6 @@
 import './Navber.css'
 import { NavLink } from 'react-router-dom';
-import { Dropdown, DropdownItem } from "flowbite-react";
+
 
 const Navber = () => {
 
@@ -19,30 +19,29 @@ const Navber = () => {
                 <div className="flex items-center space-x-4">
                     <span className="font-semibold">
                         Call Us: <span className="font-bold">(800) 060-0730</span>
-                    </span>
-                    <a href="#" className="hover:underline">About Us</a>
-                    <a href="#" className="hover:underline">Contacts</a>
-                    <a href="#" className="hover:underline">Track Order</a>
+                    </span >
+                        <NavLink className='text-gray-300 hover:text-white'  to='/about'>About Us</NavLink>
+                        <NavLink className='text-gray-300 hover:text-white' to='/contact'>Contact</NavLink>
+                        <NavLink className='text-gray-300 hover:text-white' to='/track-order'>Track Order</NavLink>
                 </div>
 
                 {/* Middle text */}
-                <div className="hidden md:block text-gray-600 bg-white px-10 py-3 text-xs font-semibold uppercase box">
-                    <span className="inline-block ">
-                        Auto Parts for Cars, Trucks and Motorcycles
-                    </span>
+                <div >
+                    <NavLink  className="hidden md:block text-gray-600 bg-white px-10 py-3 text-xs font-semibold uppercase box">Auto Parts for Cars, Trucks and Motorcycles</NavLink>
+
                 </div>
 
                 {/* Right side */}
                 <div className="flex items-center space-x-4">
                     <span>Compare: <strong>0</strong></span>
-                    <span>
+                    <span className='text-gray-300 hover:text-white'>
                         Currency:{" "}
                         <select className="bg-gray-800 border-none focus:outline-none">
                             <option>USD</option>
                             <option>EUR</option>
                         </select>
                     </span>
-                    <span>
+                    <span className='text-gray-300 hover:text-white'>
                         Language:{" "}
                         <select className="bg-gray-800 border-none focus:outline-none">
                             <option>EN</option>

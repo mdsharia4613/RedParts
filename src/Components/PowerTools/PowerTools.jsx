@@ -15,7 +15,7 @@ const PowerTools = () => {
     }, []);
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto mt-20">
             <h2 className="text-2xl font-bold text-center mb-6">Power Tools</h2>
 
             <Swiper
@@ -23,11 +23,11 @@ const PowerTools = () => {
                 spaceBetween={30}
                 pagination={{ clickable: true }}
                 modules={[Pagination]}
-                className="mySwiper"
+                className="mySwiper "
             >
                 {products.map((product) => (
                     <SwiperSlide key={product.id}>
-                        <div className="flex flex-col items-center shadow-2xl p-4 rounded-lg mb-20">
+                        <div className="flex flex-col items-center shadow-2xl p-4 rounded-lg mb-20 ">
                             <img
                                 src={product.img}
                                 alt={product.productName}

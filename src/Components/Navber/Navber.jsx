@@ -7,7 +7,7 @@ const Navber = () => {
 
     return (
       
-        <div className="relative w-full hidden md:flex justify-center text-sm text-white">
+        <div className="relative w-full hidden md:flex justify-center text-sm text-white ">
             {/* Left red background */}
             <div className="absolute left-0 top-0 h-full w-1/2 bg-red-600 clip-left"></div>
 

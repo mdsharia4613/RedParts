@@ -4,6 +4,7 @@ import Cards from '../Cards/Cards';
 import Services from '../Services/Services';
 import servicesData from "../../../public/services.json"
 import PowerTools from '../PowerTools/PowerTools';
+import Offers from '../Offers/Offers';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Services servicesData={servicesData}></Services>
             <Cards></Cards>
             <PowerTools></PowerTools>
+            <Offers></Offers>
         </div>
     )
 };

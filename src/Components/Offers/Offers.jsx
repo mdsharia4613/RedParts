@@ -28,12 +28,12 @@ const Offers = () => {
                 spaceBetween={30}
                 pagination={{ clickable: true }}
                 modules={[Pagination]}
-                className="mySwiper"
+                className="mySwiper mb-20 mt-10"
             >
                 {
                     offers.map((offer) => (
                         <SwiperSlide>
-                            <div>
+                            <div className="flex flex-col items-center shadow-2xl p-6 rounded-2xl mb-15">
                                 <img className="w-60 h-60 object-cover rounded-md" src={offer.img} alt="" />
                                 <p>{offer.productName}</p>
                             </div>

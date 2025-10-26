@@ -27,7 +27,7 @@ const PowerTools = () => {
             >
                 {products.map((product) => (
                     <SwiperSlide key={product.id}>
-                        <div className="flex flex-col items-center shadow-lg p-4 rounded-lg">
+                        <div className="flex flex-col items-center shadow-2xl p-4 rounded-lg mb-20">
                             <img
                                 src={product.img}
                                 alt={product.productName}

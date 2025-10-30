@@ -14,6 +14,7 @@ import Cards from './Components/Cards/Cards.jsx';
 import Error from './Components/Error/Error.jsx';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
         path: "contact",
         element: <Contacts></Contacts>
       },
-  
+      
      
     ]
   },

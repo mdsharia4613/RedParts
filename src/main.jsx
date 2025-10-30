@@ -9,9 +9,10 @@ import Root from './Components/Root/Root.jsx';
 import About from './Components/About/About.jsx';
 import Contacts from './Components/Contacts/Contacts.jsx';
 import Home from './Components/Home/Home.jsx';
-import Services from './Components/Services/Services.jsx';
-import Cards from './Components/Cards/Cards.jsx';
 import Error from './Components/Error/Error.jsx';
+// main.jsx ফাইলে এই লাইনটা ঠিক করো
+import { CartProvider } from "./Components/CartContext/CartContext.jsx";
+
 
 
 
@@ -44,7 +45,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+        <RouterProvider router={router} />
+    </CartProvider>
+    
 
   </StrictMode>,
 )

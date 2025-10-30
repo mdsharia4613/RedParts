@@ -1,7 +1,12 @@
 import { FaStar } from "react-icons/fa";
+// Card.jsx ফাইলে এই লাইনটা ঠিক করো
+import { useCart } from "../CartContext/CartContext";
+
 
 const Card = ({ card }) => {
-    const { productName, price, img, rating, brandName, category, inStock } = card;
+    const { productName, price, img, rating, brandName, category, stock } = card;
+    const { addToCart } = useCart();
+
 
     return (
         <div
@@ -14,7 +19,7 @@ const Card = ({ card }) => {
                     alt={productName}
                     className="w-full h-56 object-cover rounded-t-2xl"
                 />
-                {!inStock && (
+                {!stock && (
                     <span className="absolute top-2 right-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
                         Out of Stock
                     </span>
@@ -34,14 +39,16 @@ const Card = ({ card }) => {
                 <div className="flex justify-between items-center mt-4">
                     <p className="text-xl font-bold text-[#e52727]">${price}</p>
                     <button
-                        disabled={!inStock}
-                        className={`px-3 py-1 text-sm rounded-lg transition-all duration-300 ${inStock
+                        onClick={() => addToCart({ productName, price, img })} // ✅ এখন কাজ করবে
+                        disabled={!stock}
+                        className={`px-3 py-1 text-sm rounded-lg transition-all duration-300 ${stock
                                 ? "bg-[#e52727] text-white hover:bg-stone-600"
                                 : "bg-gray-400 text-gray-200 cursor-not-allowed"
                             }`}
                     >
-                        {inStock ? "Add to Cart" : "Unavailable"}
+                        {stock ? "Add to Cart" : "Unavailable"}
                     </button>
+
                 </div>
             </div>
         </div>

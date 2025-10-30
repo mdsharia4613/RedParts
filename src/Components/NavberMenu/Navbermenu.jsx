@@ -1,64 +1,31 @@
 import { NavLink } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 import { FaShoppingCart, FaUserAlt } from "react-icons/fa";
+import { useCart } from "../CartContext/CartContext";
+import { useState } from "react";
+
 
 const Navbermenu = () => {
+    const { cartCount, cartItems } = useCart();
+    const [openCart, setOpenCart] = useState(false);
     return (
-        <div className="navbar container mx-auto px-10 ">
+        <div className="navbar container mx-auto px-10 relative">
             {/* LEFT SIDE */}
-            <div className="navbar-start">
-                <div className="hidden lg:flex items-center space-x-6 font-semibold text-lg">
-                    <NavLink to="/" className="hover:text-red-500 transition">Home</NavLink>
-
-                    {/* SHOP DROPDOWN */}
-                    <div className="relative group">
-                        <button className="hover:text-red-500 transition">Shop</button>
-                        <div
-                            className="absolute left-0 top-full hidden group-hover:flex flex-col bg-gray-800 rounded-md shadow-lg mt-2 w-40
-              opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-50 overflow-hidden"
-                        >
-                            <NavLink to="/product" className="px-4 py-2 hover:bg-red-600 rounded-t-md text-white">Product</NavLink>
-                            <NavLink to="/cart" className="px-4 py-2 hover:bg-red-600 rounded-b-md text-white">Cart</NavLink>
-                        </div>
-                    </div>
-
-                    {/* BLOG DROPDOWN */}
-                    <div className="relative group">
-                        <button className="hover:text-red-500 transition">Blog</button>
-                        <div
-                            className="absolute left-0 top-full hidden group-hover:flex flex-col bg-gray-800 rounded-md shadow-lg mt-2 w-40
-              opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-50 overflow-hidden"
-                        >
-                            <NavLink to="/blog-list" className="px-4 py-2 hover:bg-red-600 text-white">Blog List</NavLink>
-                            <NavLink to="/post-page" className="px-4 py-2 hover:bg-red-600 text-white">Post Page</NavLink>
-                        </div>
-                    </div>
-
-                    {/* CATEGORY DROPDOWN */}
-                    <div className="relative group">
-                        <button className="hover:text-red-500 transition">Category</button>
-                        <div
-                            className="absolute left-0 top-full hidden group-hover:flex flex-col bg-gray-800 rounded-md shadow-lg mt-2 w-40
-              opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 ease-in-out z-50 overflow-hidden"
-                        >
-                            <NavLink to="/engine" className="px-4 py-2 hover:bg-red-600 text-white">Engine</NavLink>
-                            <NavLink to="/motor" className="px-4 py-2 hover:bg-red-600 text-white">Motor</NavLink>
-                        </div>
-                    </div>
-                </div>
+            <div className="navbar-start hidden lg:flex items-center space-x-6 font-semibold text-lg">
+                <NavLink to="/" className="hover:text-red-500 transition">Home</NavLink>
             </div>
 
             {/* CENTER LOGO */}
             <NavLink to="/" className="text-4xl font-bold">
                 <span className="text-red-600">RED</span>PARTS
-
             </NavLink>
 
             {/* RIGHT ICONS */}
-            <div className="navbar-end gap-6">
+            <div className="navbar-end gap-6 relative">
                 <NavLink className="text-3xl">
                     <CiHeart />
                 </NavLink>
+
                 <button className="flex items-center gap-2 cursor-pointer" type="button">
                     <span className="text-2xl">
                         <FaUserAlt />
@@ -68,17 +35,57 @@ const Navbermenu = () => {
                         <p className="font-semibold">My Account</p>
                     </div>
                 </button>
-                <button className="flex items-center gap-2 cursor-pointer" type="button">
-                    <span className="text-2xl">
-                        <FaShoppingCart />
-                    </span>
-                    <div>
-                        <p className="text-gray-400 text-sm">Shopping Cart</p>
-                        <p className="font-semibold">$ 0.00</p>
-                    </div>
-                </button>
+
+                {/* 🛒 CART */}
+                <div className="relative">
+                    <button
+                        className="flex items-center gap-2 cursor-pointer relative"
+                        type="button"
+                        onClick={() => setOpenCart(!openCart)}
+                    >
+                        <span className="text-2xl relative">
+                            <FaShoppingCart />
+                            {cartCount > 0 && (
+                                <span className="absolute -top-2 -right-3 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                                    {cartCount}
+                                </span>
+                            )}
+                        </span>
+                        <div>
+                            <p className="text-gray-400 text-sm">Shopping Cart</p>
+                            <p className="font-semibold">$ 0.00</p>
+                        </div>
+                    </button>
+
+                    {/* 🟢 CART DROPDOWN */}
+                    {openCart && (
+                        <div className="absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg p-3 z-50">
+                            {cartItems.length > 0 ? (
+                                cartItems.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className="flex items-center gap-3 border-b py-2 last:border-none"
+                                    >
+                                        <img
+                                            src={item.img}
+                                            alt={item.productName}
+                                            className="w-12 h-12 rounded object-cover"
+                                        />
+                                        <div>
+                                            <p className="text-sm font-semibold">{item.productName}</p>
+                                            <p className="text-xs text-gray-600">${item.price}</p>
+                                        </div>
+                                    </div>
+                                ))
+                            ) : (
+                                <p className="text-center text-gray-500 text-sm">Cart is empty</p>
+                            )}
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
+
     );
 };
 

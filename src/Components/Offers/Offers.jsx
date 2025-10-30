@@ -1,46 +1,57 @@
-import React, { useEffect, useState } from 'react';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-
-
-// import required modules
-import { Pagination } from 'swiper/modules';
+import React from 'react';
+import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import './Offers.css';
 
 
 const Offers = () => {
-
-    const [offers, setOffers] = useState([]);
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('/card.json')
-        .then(res => res.json())
-        .then(data => setOffers(data))
-    } ,[])
+        fetch("/products.json")
+            .then((res) => res.json())
+            .then((data) => setProducts(data));
+    }, []);
+
     return (
-        <div className='container mx-auto'>
-            <Swiper
-                slidesPerView={4}
-                spaceBetween={30}
-                pagination={{ clickable: true }}
-                modules={[Pagination]}
-                className="mySwiper mb-20 mt-10"
-            >
-                {
-                    offers.map((offer) => (
-                        <SwiperSlide>
-                            <div className="flex flex-col items-center shadow-2xl p-6 rounded-2xl mb-15">
-                                <img className="w-60 h-60 object-cover rounded-md" src={offer.img} alt="" />
-                                <p>{offer.productName}</p>
+        
+        <div className='offers-container'>
+
+           
+            <div className='blurred-bg'></div>
+
+          
+            <div className='swiper-content'>
+                <Swiper
+                    slidesPerView={4}
+                    slidesPerGroup={4}
+                    spaceBetween={30}
+                    pagination={{ clickable: true }}
+                    modules={[Pagination]}
+                    className="mySwiper bg-white bg-opacity-80 p-8 rounded-lg" // Tailwind ব্যবহার করে হালকা ব্যাকগ্রাউন্ড ও প্যাডিং দেওয়া হলো
+                >
+                    {products.map((product) => (
+                        <SwiperSlide key={product.id}>
+                            <div className="flex flex-col items-center shadow-lg p-4 rounded-lg bg-white">
+                                <img
+                                    src={product.img}
+                                    alt={product.productName}
+                                    className="w-60 h-60 object-cover rounded-md"
+                                />
+                                <p className="mt-3 font-semibold text-gray-700">
+                                    {product.productName}
+                                </p>
+                                <div>
+                                    <p>{}</p>
+                                </div>
                             </div>
                         </SwiperSlide>
-                    ))
-                }
-            </Swiper>
+                    ))}
+                </Swiper>
+            </div>
         </div>
     );
 };

@@ -11,8 +11,8 @@ const Home = () => {
             <Banner></Banner>
             <Services servicesData={servicesData}></Services>
             <Cards></Cards>
-        
-            <Offers></Offers>
+           <Offers></Offers>
+            
         </div>
     )
 };

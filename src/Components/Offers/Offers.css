@@ -1,0 +1,48 @@
+/* প্রধান কনটেইনারের স্টাইল */
+.offers-container {
+    position: relative;
+    /* ভেতরের ব্লারড ব্যাকগ্রাউন্ডকে absolute করার জন্য প্রয়োজন */
+    width: 100%;
+    min-height: 500px;
+    /* উচ্চতা নির্ধারণ করা হয়েছে */
+    overflow: hidden;
+    /* ব্লার এর কারণে বাইরের সাদা অংশ আড়াল করতে */
+    padding-top: 50px;
+    /* কন্টেন্টের জন্য উপরে প্যাডিং */
+    padding-bottom: 50px;
+    /* কন্টেন্টের জন্য নিচে প্যাডিং */
+}
+
+/* ব্লারড ব্যাকগ্রাউন্ড লেয়ার */
+.blurred-bg {
+    background-image: url('https://i.ibb.co.com/DP8hWDS3/10001-2.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* ব্লার করার জন্য এবং পুরো কনটেইনার জুড়ে থাকার জন্য */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* শুধুমাত্র এই লেয়ারটিকে ব্লার করবে */
+    filter: blur(5px);
+
+    /* ব্লার ইফেক্টের কারণে যে ছোট সাদা বর্ডার দেখা যায় তা লুকানোর জন্য স্কেল */
+    transform: scale(1.02);
+    z-index: 0;
+    /* কন্টেন্ট এর নিচে রাখতে */
+}
+
+/* স্লাইডার কন্টেন্ট লেয়ার */
+.swiper-content {
+    position: relative;
+    /* ব্লারড ব্যাকগ্রাউন্ডের উপরে আনতে */
+    z-index: 1;
+    /* ব্লারড ব্যাকগ্রাউন্ডের উপরে রাখতে */
+    max-width: 1200px;
+    /* একটি সর্বোচ্চ প্রস্থ সেট করা হলো */
+    margin: 0 auto;
+    /* কেন্দ্রে আনার জন্য */
+}

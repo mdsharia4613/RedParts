@@ -15,7 +15,9 @@
             "Black",
             "Red"
         ], 
-        "category": "All"
+        "category": "All",
+        "inStock": true
+
     },
     {
         "id": "2",
@@ -33,7 +35,8 @@
             "Silver",
             "Gray"
         ], 
-        "category": "All"
+        "category": "All",
+        "inStock": true
     },
     {
         "id": "3",
@@ -50,7 +53,8 @@
         "colors": [
             "Black"
         ],
-        "category": "All"
+        "category": "All",
+        "inStock": false
     },
     {
         "id": "4",
@@ -68,7 +72,8 @@
             "Blue",
             "White"
         ],
-        "category": "All"
+        "category": "All",
+        "inStock": false
     },
     {
         "id": "5",
@@ -85,7 +90,8 @@
         "colors": [
             "Silver"
         ],
-        "category": "All"
+        "category": "All",
+        "inStock": true
     },
     {
         "id": "6",
@@ -102,7 +108,8 @@
         "colors": [
             "Silver"
         ],
-        "category": "All"
+        "category": "All",
+        "inStock": true
     },
     {
         "id": "7",
@@ -120,7 +127,8 @@
             "Black",
             "White"
         ],
-        "category": "All"
+        "category": "All",
+        "inStock": false
     },
     {
         "id": "8",
@@ -137,7 +145,8 @@
         "colors": [
             "Black"
         ],
-        "category": "All"
+        "category": "All",
+        "inStock": false
     },
     {
         "id": "9",
@@ -154,7 +163,8 @@
         "colors": [
             "Silver"
         ],
-        "category": "Power Tools"
+        "category": "Power Tools",
+        "inStock": true
     },
     {
         "id": "10",
@@ -172,7 +182,8 @@
             "Red",
             "Black"
         ],
-        "category": "Power Tools"
+        "category": "Power Tools",
+        "inStock": true
     },
     {
         "id": "11",
@@ -189,7 +200,8 @@
         "colors": [
             "Black"
         ],
-        "category": "Power Tools"
+        "category": "Power Tools",
+        "inStock": true
     },
     {
         "id": "12",
@@ -207,7 +219,8 @@
             "Black",
             "Silver"
         ],
-        "category": "Power Tools"
+        "category": "Power Tools",
+        "inStock": true
     },
     {
         "id": "13",
@@ -224,7 +237,8 @@
         "colors": [
             "Gray"
         ],
-        "category": "Power Tools"
+        "category": "Power Tools",
+        "inStock": true
     },
     {
         "id": "14",
@@ -241,7 +255,8 @@
         "colors": [
             "Silver"
         ],
-        "category": "Power Tools"
+        "category": "Power Tools",
+        "inStock": true
     },
     {
         "id": "15",
@@ -258,7 +273,8 @@
         "colors": [
             "Bronze"
         ],
-        "category": "Power Tools"
+        "category": "Power Tools",
+        "inStock": false
     },
     {
         "id": "16",
@@ -275,7 +291,8 @@
         "colors": [
             "Black"
         ],
-        "category": "Power Tools"
+        "category": "Power Tools",
+        "inStock": true
     },
     {
         "id": "17",
@@ -293,7 +310,8 @@
             "White",
             "Black"
         ],
-        "category": "Power Tools"
+        "category": "Power Tools",
+        "inStock": true
     },
     {
         "id": "18",
@@ -310,7 +328,8 @@
         "colors": [
             "Black"
         ],
-        "category": "Hand Tools"
+        "category": "Hand Tools",
+        "inStock": false
     },
     {
         "id": "19",
@@ -327,7 +346,8 @@
         "colors": [
             "Black"
         ],
-        "category": "Hand Tools"
+        "category": "Hand Tools",
+        "inStock": true
     },
     {
         "id": "20",
@@ -344,7 +364,8 @@
         "colors": [
             "Black"
         ],
-        "category": "Hand Tools"
+        "category": "Hand Tools",
+        "inStock": true
     },
     {
         "id": "21",
@@ -362,7 +383,8 @@
             "Black",
             "Gray"
         ],
-        "category": "Hand Tools"
+        "category": "Hand Tools",
+        "inStock": false
     },
     {
         "id": "22",
@@ -380,7 +402,8 @@
             "Black",
             "Yellow"
         ],
-        "category": "Hand Tools"
+        "category": "Hand Tools",
+        "inStock": true
     },
     {
         "id": "23",
@@ -397,7 +420,8 @@
         "colors": [
             "Black"
         ],
-        "category": "Hand Tools"
+        "category": "Hand Tools",
+        "inStock": true
     },
     {
         "id": "24",
@@ -414,7 +438,8 @@
         "colors": [
             "Black"
         ],
-        "category": "Hand Tools"
+        "category": "Hand Tools",
+        "inStock": false
     },
     {
         "id": "25",
@@ -432,7 +457,8 @@
             "Silver",
             "Black"
         ],
-        "category": "Hand Tools"
+        "category": "Hand Tools",
+        "inStock": true
     },
     {
         "id": "26",
@@ -450,7 +476,8 @@
             "Gunmetal",
             "Silver"
         ],
-        "category": "Plumbing"
+        "category": "Plumbing",
+        "inStock": true
     },
     {
         "id": "27",
@@ -468,7 +495,8 @@
             "Silver",
             "Black"
         ],
-        "category": "Plumbing"
+        "category": "Plumbing",
+        "inStock": false
     },
     {
         "id": "28",
@@ -486,7 +514,8 @@
             "Black",
             "Blue"
         ],
-        "category": "Plumbing"
+        "category": "Plumbing",
+        "inStock": true
     },
     {
         "id": "29",
@@ -503,7 +532,8 @@
         "colors": [
             "Black"
         ],
-        "category": "Plumbing"
+        "category": "Plumbing",
+        "inStock": false
     },
     {
         "id": "30",
@@ -520,7 +550,8 @@
         "colors": [
             "Silver"
         ],
-        "category": "Plumbing"
+        "category": "Plumbing",
+        "inStock": true
     }
 
 ]

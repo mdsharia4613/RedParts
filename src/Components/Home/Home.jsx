@@ -3,7 +3,6 @@ import Banner from '../Banner/Banner';
 import Cards from '../Cards/Cards';
 import Services from '../Services/Services';
 import servicesData from "../../../public/services.json"
-import PowerTools from '../PowerTools/PowerTools';
 import Offers from '../Offers/Offers';
 
 const Home = () => {
@@ -12,7 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <Services servicesData={servicesData}></Services>
             <Cards></Cards>
-            <PowerTools></PowerTools>
+        
             <Offers></Offers>
         </div>
     )

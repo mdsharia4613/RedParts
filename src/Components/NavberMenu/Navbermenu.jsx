@@ -11,8 +11,11 @@ const Navbermenu = () => {
     return (
         <div className="navbar container mx-auto px-10 relative">
             {/* LEFT SIDE */}
-            <div className="navbar-start hidden lg:flex items-center space-x-6 font-semibold text-lg">
-                <NavLink to="/" className="hover:text-red-500 transition">Home</NavLink>
+            <div className="navbar-start hidden lg:flex items-center space-x-15 font-semibold text-lg">
+                <NavLink to="catagory" className="hover:text-red-500 transition">Home</NavLink>
+                <NavLink to="/" className="hover:text-red-500 transition">Catagory</NavLink>
+                <NavLink to="/" className="hover:text-red-500 transition">blog</NavLink>
+                <NavLink to="/" className="hover:text-red-500 transition">Shop</NavLink>
             </div>
 
             {/* CENTER LOGO */}
